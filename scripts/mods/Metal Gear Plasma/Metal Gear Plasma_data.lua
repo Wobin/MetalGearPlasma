@@ -1,7 +1,7 @@
 local mod = get_mod("Metal Gear Plasma")
 
 return {
-	name = "Metal Gear Plasma",
+	name = mod:localize("mod_name"),
 	description = mod:localize("mod_description"),
 	is_togglable = true,
 	options = {

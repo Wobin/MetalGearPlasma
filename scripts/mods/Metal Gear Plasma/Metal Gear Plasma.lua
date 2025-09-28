@@ -1,5 +1,5 @@
 local mod = get_mod("Metal Gear Plasma")
-mod.version = "2.0"
+mod.version = "2.1.0"
 
 local Audio
 
