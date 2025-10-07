@@ -1,5 +1,5 @@
 local mod = get_mod("Metal Gear Plasma")
-mod.version = "2.2.0"
+mod.version = "2.3.0"
 
 local Audio
 
@@ -9,7 +9,7 @@ mod.on_all_mods_loaded = function()
     if Audio then 
         Audio.hook_sound("wwise/events/weapon/play_minion_plasmapistol_charge", function(_, _, delta) 
             if (mod:get("reduce_noise") and (delta == nil or delta > 0.5)) or not mod:get("reduce_noise") then                        
-               Audio.play_file("alert.mp3", { audio_type = "sfx", adelay="1500:all=1" })
+               Audio.play_file("alert.mp3", { audio_type = "sfx", adelay="1300:all=1" })
             end
         end)        
     end
@@ -28,5 +28,5 @@ local tc = Managers.time
 		return
 	end
 	throttle[wwise_event_name] = tc:time("main")
-    Promise.delay(1.6):next(function() Managers.ui:play_3d_sound("wwise/events/weapon/play_special_sniper_flash", unit_or_position_or_id) end)    
+    Promise.delay(1.3):next(function() Managers.ui:play_3d_sound("wwise/events/weapon/play_special_sniper_flash", unit_or_position_or_id) end)    
   end)
