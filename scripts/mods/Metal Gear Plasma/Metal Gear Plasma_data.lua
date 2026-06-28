@@ -12,7 +12,7 @@ return {
 				default_value = true,
 			},
 			{
-				setting_id = "reduce_noise",			
+				setting_id = "reduce_noise",
 				type = "checkbox",
 				default_value = false,
 			},
