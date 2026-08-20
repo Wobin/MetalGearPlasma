@@ -1,0 +1,21 @@
+{
+	"name": "Metal Gear Plasma",
+	"description": "Metal Gear Plasma adds in the MGS alert noise to the plasma gunner's wind up to give you a bit more of a warning of incoming fire",
+	"version": "3.0",
+	"author": "Wobin",
+	"homepage": "https://www.nexusmods.com/warhammer40kdarktide/mods/596",
+	"source": "https://github.com/Wobin/MetalGearPlasma",
+	"funding": {
+		"kofi": "https://ko-fi.com/wobin_dwonderdog"
+	},
+	"nexusId": "596",
+	"order": {
+		"require": [
+			"SimpleAudio"
+		],
+		"this_after": [
+			"SimpleAudio"
+		],
+		"this_before": []
+	}
+}

@@ -3,11 +3,10 @@ Title: Metal Gear Plasma
 Author: Wobin
 Date: 28/06/2026
 Repository: https://github.com/Wobin/MetalGearPlasma
-Version: 3.0
 ]]--
 
 local mod = get_mod("Metal Gear Plasma")
-mod.version = "3.0"
+mod.version = mod.get_metadata and mod:get_metadata("version") or "unknown"
 
 local SimpleAudio
 local Unit = rawget(_G, "Unit")
